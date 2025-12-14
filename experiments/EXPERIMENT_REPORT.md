@@ -1,29 +1,27 @@
 # 实验报告
 
-生成时间: 2025-12-14 22:24:18
+生成时间: 2025-12-15 00:09:45
 
 ## 实验总结
 
-- 总实验数: 7
+- 总实验数: 5
 - 最高准确率: 0.9327
 - 最高F1: 0.9232
-- 平均准确率: 0.8626
+- 平均准确率: 0.8456
 
 ## 详细结果
 
 | 实验ID | 名称 | 学习率 | 冻结层 | 测试准确率 | F1-score |
 |--------|------|--------|---------|------------|----------|
 | exp_001_baseline | baseline | 2.00e-05 | 0 | 0.9132 | 0.8999 |
-| exp_002_baseline | baseline | 2.00e-05 | 0 | 0.9132 | 0.8999 |
-| exp_003_lower_lr_1e-5 | lower_lr_1e-5 | 1.00e-05 | 0 | 0.8970 | 0.8819 |
-| exp_004_lower_lr_1e-5 | lower_lr_1e-5 | 1.00e-05 | 0 | 0.8970 | 0.8819 |
-| exp_005_higher_lr_5e-5 | higher_lr_5e-5 | 5.00e-05 | 0 | 0.9327 | 0.9232 |
-| exp_006_freeze_4_layers | freeze_4_layers | 5.00e-05 | 4 | 0.8546 | 0.8328 |
-| exp_007_freeze_all_transformers | freeze_all_transformers | 1.00e-04 | 6 | 0.6306 | 0.5695 |
+| exp_002_lower_lr_1e-5 | lower_lr_1e-5 | 1.00e-05 | 0 | 0.8970 | 0.8819 |
+| exp_003_higher_lr_5e-5 | higher_lr_5e-5 | 5.00e-05 | 0 | 0.9327 | 0.9232 |
+| exp_004_freeze_4_layers | freeze_4_layers | 5.00e-05 | 4 | 0.8546 | 0.8328 |
+| exp_005_freeze_all_transformers | freeze_all_transformers | 1.00e-04 | 6 | 0.6306 | 0.5695 |
 
 ## 最佳配置
 
-- **实验ID**: exp_005_higher_lr_5e-5
+- **实验ID**: exp_003_higher_lr_5e-5
 - **名称**: higher_lr_5e-5
 - **学习率**: 5.00e-05
 - **批次大小**: 32

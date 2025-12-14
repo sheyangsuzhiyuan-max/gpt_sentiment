@@ -2,20 +2,20 @@
 
 ## 统计信息
 
-- 实验总数: 7
+- 实验总数: 5
 - 最佳准确率: 0.9327
 - 最佳F1-score: 0.9232
-- 性能提升: 8.1%
+- 性能提升: 10.3%
 
 ## 英文简历要点
 
 • Fine-tuned DistilBERT model on 220K+ customer reviews achieving 93.3% accuracy
 
-• Conducted 7 systematic experiments optimizing hyperparameters including learning rate, layer freezing, and weight decay
+• Conducted 5 systematic experiments optimizing hyperparameters including learning rate, layer freezing, and weight decay
 
 • Implemented transfer learning strategies (freezing 0 layers) reducing training time while maintaining model performance
 
-• Built experiment management system tracking 10+ metrics across configurations, improving baseline by 8.1%
+• Built experiment management system tracking 10+ metrics across configurations, improving baseline by 10.3%
 
 • Deployed production-ready Streamlit application with batch inference capability processing 1000+ reviews/minute
 
@@ -23,11 +23,11 @@
 
 • 在 22万+用户评论数据集上微调 DistilBERT 模型，测试准确率达 93.3%，F1-score 0.923
 
-• 系统性开展 7 组对照实验，调优学习率、层冻结、权重衰减等超参数
+• 系统性开展 5 组对照实验，调优学习率、层冻结、权重衰减等超参数
 
 • 实施迁移学习策略（冻结 0 层），在保持性能的同时减少训练时间 X%
 
-• 建立实验追踪系统，管理 10+ 个评估指标，相比基线模型提升 8.1%
+• 建立实验追踪系统，管理 10+ 个评估指标，相比基线模型提升 10.3%
 
 • 部署生产级 Streamlit Web 应用，支持批量推理，处理速度 1000+ 条/分钟
 
@@ -47,7 +47,7 @@ Developed an end-to-end sentiment analysis system for ChatGPT reviews:
 • Dataset: 220,000+ customer reviews (3-class classification: positive/neutral/negative)
 
 • Model: Fine-tuned DistilBERT with systematic hyperparameter optimization
-  - Conducted 7 experiments comparing learning rates, layer freezing strategies
+  - Conducted 5 experiments comparing learning rates, layer freezing strategies
   - Best configuration achieved 93.3% accuracy, 0.923 F1-score
   - Implemented gradient clipping and learning rate scheduling
 
