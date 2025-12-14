@@ -86,7 +86,8 @@ class ExperimentRunner:
         if tracker_file.exists():
             df = pd.read_csv(tracker_file)
             if len(df) > 0:
-                last_id = int(df['exp_id'].str.replace('exp_', '').max())
+                # 从 exp_id 中提取数字部分 (exp_001_baseline -> 001)
+                last_id = int(df['exp_id'].str.extract(r'exp_(\d+)')[0].max())
                 new_id = last_id + 1
             else:
                 new_id = 1
