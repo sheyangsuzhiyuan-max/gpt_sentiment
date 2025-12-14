@@ -1,0 +1,28 @@
+name: gpt_senti
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - ipykernel
+  - jupyter
+  - pandas
+  - numpy
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - tqdm
+  - nltk                 # 新增：用于文本清洗(stopwords)
+  - pytorch              # 修改：移除 cpuonly，允许 M4 调用 MPS 加速
+  - torchvision
+  - torchaudio
+  - pip:
+      - wordcloud
+      - datasets
+      - transformers
+      - evaluate
+      - sentencepiece
+      - accelerate       # 新增：Transformers 训练依赖

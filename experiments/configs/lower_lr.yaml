@@ -1,0 +1,38 @@
+# 低学习率实验
+experiment:
+  name: "lower_lr_1e-5"
+  description: "Lower learning rate (1e-5) for more stable training"
+  save_model: false
+
+model:
+  name: "distilbert-base-uncased"
+  num_labels: 3
+  freeze_layers: 0
+
+training:
+  learning_rate: 1.0e-5  # 降低学习率
+  batch_size: 32
+  num_epochs: 1
+  weight_decay: 0.01
+  warmup_steps: 500
+  max_grad_norm: 1.0
+
+optimizer:
+  type: "AdamW"
+  betas: [0.9, 0.999]
+  eps: 1.0e-8
+
+scheduler:
+  type: "linear"
+  warmup_ratio: 0.1
+
+data:
+  max_seq_length: 128
+  test_size: 0.2
+  random_seed: 42
+
+output:
+  save_confusion_matrix: true
+  save_classification_report: true
+  save_training_curves: true
+  save_predictions: false

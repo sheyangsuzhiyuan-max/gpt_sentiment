@@ -1,0 +1,46 @@
+# 层冻结实验配置
+# 冻结前4层transformer，只微调顶层
+
+experiment:
+  name: "freeze_4_layers"
+  description: "Freeze first 4 transformer layers, fine-tune top layers only"
+  save_model: false  # 不保存模型，只保存评估结果
+
+model:
+  name: "distilbert-base-uncased"
+  num_labels: 3
+  freeze_layers: 4  # 冻结前4层（DistilBERT共6层）
+
+training:
+  learning_rate: 5.0e-5  # 可以用更高的学习率（因为只训练部分层）
+  batch_size: 32
+  num_epochs: 1
+  weight_decay: 0.01  # 添加权重衰减防止过拟合
+  warmup_steps: 500
+  max_grad_norm: 1.0
+
+optimizer:
+  type: "AdamW"
+  betas: [0.9, 0.999]
+  eps: 1.0e-8
+
+scheduler:
+  type: "linear"  # 线性学习率衰减
+  warmup_ratio: 0.1
+
+data:
+  max_seq_length: 128
+  test_size: 0.2
+  random_seed: 42
+
+output:
+  save_confusion_matrix: true
+  save_classification_report: true
+  save_training_curves: true
+  save_predictions: false
+
+notes: |
+  实验假设：
+  1. 冻结底层可以保留预训练知识
+  2. 只微调顶层可以加快训练
+  3. 更高的学习率不会导致底层知识损失

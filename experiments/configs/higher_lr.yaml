@@ -1,0 +1,47 @@
+# 高学习率实验
+# 测试更激进的学习率
+
+experiment:
+  name: "higher_lr_5e-5"
+  description: "Higher learning rate (5e-5) with warmup"
+  save_model: false
+
+model:
+  name: "distilbert-base-uncased"
+  num_labels: 3
+  freeze_layers: 0
+
+training:
+  learning_rate: 5.0e-5  # 2.5倍于baseline
+  batch_size: 32
+  num_epochs: 1
+  weight_decay: 0.01
+  warmup_steps: 1000  # 更长的warmup防止初期震荡
+  max_grad_norm: 1.0
+
+optimizer:
+  type: "AdamW"
+  betas: [0.9, 0.999]
+  eps: 1.0e-8
+
+scheduler:
+  type: "cosine"  # 余弦退火
+  warmup_ratio: 0.1
+  num_cycles: 0.5
+
+data:
+  max_seq_length: 128
+  test_size: 0.2
+  random_seed: 42
+
+output:
+  save_confusion_matrix: true
+  save_classification_report: true
+  save_training_curves: true
+  save_predictions: false
+
+notes: |
+  测试假设：
+  - 更高的学习率可能找到更好的局部最优
+  - Warmup 可以缓解初期不稳定
+  - Cosine scheduler 平滑收敛
