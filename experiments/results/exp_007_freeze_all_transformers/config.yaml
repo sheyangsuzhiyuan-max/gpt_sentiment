@@ -1,0 +1,35 @@
+data:
+  max_seq_length: 128
+  random_seed: 42
+  test_size: 0.2
+experiment:
+  description: Freeze all transformer layers, only train classifier head
+  name: freeze_all_transformers
+  save_model: false
+model:
+  freeze_layers: 6
+  name: distilbert-base-uncased
+  num_labels: 3
+notes: "\u53EA\u8BAD\u7EC3\u5206\u7C7B\u5668\u5934\u7684\u5B9E\u9A8C\uFF1A\n- \u8BAD\
+  \u7EC3\u901F\u5EA6\u6700\u5FEB\n- \u53C2\u6570\u91CF\u6700\u5C11\n- \u9002\u5408\
+  \u4F5C\u4E3A\u5FEB\u901Fbaseline\n"
+optimizer:
+  betas:
+  - 0.9
+  - 0.999
+  eps: 1.0e-08
+  type: AdamW
+output:
+  save_classification_report: true
+  save_confusion_matrix: true
+  save_predictions: false
+  save_training_curves: true
+scheduler:
+  type: null
+training:
+  batch_size: 64
+  learning_rate: 0.0001
+  max_grad_norm: 1.0
+  num_epochs: 1
+  warmup_steps: 200
+  weight_decay: 0.01

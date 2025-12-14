@@ -1,0 +1,38 @@
+data:
+  max_seq_length: 128
+  random_seed: 42
+  test_size: 0.2
+experiment:
+  description: Higher learning rate (5e-5) with warmup
+  name: higher_lr_5e-5
+  save_model: false
+model:
+  freeze_layers: 0
+  name: distilbert-base-uncased
+  num_labels: 3
+notes: "\u6D4B\u8BD5\u5047\u8BBE\uFF1A\n- \u66F4\u9AD8\u7684\u5B66\u4E60\u7387\u53EF\
+  \u80FD\u627E\u5230\u66F4\u597D\u7684\u5C40\u90E8\u6700\u4F18\n- Warmup \u53EF\u4EE5\
+  \u7F13\u89E3\u521D\u671F\u4E0D\u7A33\u5B9A\n- Cosine scheduler \u5E73\u6ED1\u6536\
+  \u655B\n"
+optimizer:
+  betas:
+  - 0.9
+  - 0.999
+  eps: 1.0e-08
+  type: AdamW
+output:
+  save_classification_report: true
+  save_confusion_matrix: true
+  save_predictions: false
+  save_training_curves: true
+scheduler:
+  num_cycles: 0.5
+  type: cosine
+  warmup_ratio: 0.1
+training:
+  batch_size: 32
+  learning_rate: 5.0e-05
+  max_grad_norm: 1.0
+  num_epochs: 1
+  warmup_steps: 1000
+  weight_decay: 0.01

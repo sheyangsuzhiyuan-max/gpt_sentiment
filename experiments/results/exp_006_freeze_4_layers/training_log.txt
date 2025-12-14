@@ -1,0 +1,42 @@
+2025-12-14 22:02:39 - Experiment_exp_006_freeze_4_layers - INFO - ============================================================
+2025-12-14 22:02:39 - Experiment_exp_006_freeze_4_layers - INFO - 实验开始: freeze_4_layers
+2025-12-14 22:02:39 - Experiment_exp_006_freeze_4_layers - INFO - 实验ID: exp_006_freeze_4_layers
+2025-12-14 22:02:39 - Experiment_exp_006_freeze_4_layers - INFO - ============================================================
+2025-12-14 22:02:39 - Experiment_exp_006_freeze_4_layers - INFO - 加载数据...
+2025-12-14 22:02:39 - Experiment_exp_006_freeze_4_layers - INFO - 数据大小: 219,286
+2025-12-14 22:02:40 - Experiment_exp_006_freeze_4_layers - INFO - 训练集: 175,428, 测试集: 43,858
+2025-12-14 22:02:40 - Experiment_exp_006_freeze_4_layers - INFO - 创建数据加载器...
+2025-12-14 22:02:41 - Experiment_exp_006_freeze_4_layers - INFO - 创建模型...
+2025-12-14 22:02:42 - Experiment_exp_006_freeze_4_layers - INFO - 冻结前 4 层...
+2025-12-14 22:02:42 - Experiment_exp_006_freeze_4_layers - INFO - 总参数: 66,955,779
+2025-12-14 22:02:42 - Experiment_exp_006_freeze_4_layers - INFO - 可训练参数: 14,768,643 (22.1%)
+2025-12-14 22:02:42 - Experiment_exp_006_freeze_4_layers - INFO - 使用线性学习率调度: warmup=500, total=5483
+2025-12-14 22:02:42 - Experiment_exp_006_freeze_4_layers - INFO - 开始训练...
+2025-12-14 22:02:42 - Experiment_exp_006_freeze_4_layers - INFO - 学习率: 5e-05
+2025-12-14 22:02:42 - Experiment_exp_006_freeze_4_layers - INFO - 批次大小: 32
+2025-12-14 22:02:42 - Experiment_exp_006_freeze_4_layers - INFO - 训练轮数: 1
+2025-12-14 22:11:17 - Experiment_exp_006_freeze_4_layers - INFO - Epoch 1/1 - Loss: 0.5010, Acc: 0.7911
+2025-12-14 22:11:17 - Experiment_exp_006_freeze_4_layers - INFO - 开始评估...
+2025-12-14 22:12:13 - Experiment_exp_006_freeze_4_layers - INFO - 测试准确率: 0.8546
+2025-12-14 22:12:13 - Experiment_exp_006_freeze_4_layers - INFO - F1 (macro): 0.8328
+2025-12-14 22:12:13 - Experiment_exp_006_freeze_4_layers - INFO - F1 (weighted): 0.8532
+2025-12-14 22:12:13 - Experiment_exp_006_freeze_4_layers - INFO - 保存实验结果...
+2025-12-14 22:12:13 - Experiment_exp_006_freeze_4_layers - INFO - 
+              precision    recall  f1-score   support
+
+         bad     0.9119    0.9249    0.9184     21558
+     neutral     0.7591    0.7017    0.7293     11098
+        good     0.8314    0.8707    0.8506     11202
+
+    accuracy                         0.8546     43858
+   macro avg     0.8341    0.8325    0.8328     43858
+weighted avg     0.8527    0.8546    0.8532     43858
+
+2025-12-14 22:12:13 - Experiment_exp_006_freeze_4_layers - INFO - 混淆矩阵已保存
+2025-12-14 22:12:13 - Experiment_exp_006_freeze_4_layers - INFO - 实验记录已更新
+2025-12-14 22:12:13 - Experiment_exp_006_freeze_4_layers - INFO - 
+============================================================
+2025-12-14 22:12:13 - Experiment_exp_006_freeze_4_layers - INFO - 实验完成！耗时: 9.57 分钟
+2025-12-14 22:12:13 - Experiment_exp_006_freeze_4_layers - INFO - 结果保存在: experiments/results/exp_006_freeze_4_layers
+2025-12-14 22:12:13 - Experiment_exp_006_freeze_4_layers - INFO - ============================================================
+

@@ -1,0 +1,22 @@
+2025-12-14 17:17:30 - Experiment_exp_004_higher_lr_5e-5 - INFO - ============================================================
+2025-12-14 17:17:30 - Experiment_exp_004_higher_lr_5e-5 - INFO - 实验开始: higher_lr_5e-5
+2025-12-14 17:17:30 - Experiment_exp_004_higher_lr_5e-5 - INFO - 实验ID: exp_004_higher_lr_5e-5
+2025-12-14 17:17:30 - Experiment_exp_004_higher_lr_5e-5 - INFO - ============================================================
+2025-12-14 17:17:30 - Experiment_exp_004_higher_lr_5e-5 - INFO - 加载数据...
+2025-12-14 17:17:30 - Experiment_exp_004_higher_lr_5e-5 - INFO - 数据大小: 219,286
+2025-12-14 17:17:30 - Experiment_exp_004_higher_lr_5e-5 - INFO - 训练集: 175,428, 测试集: 43,858
+2025-12-14 17:17:30 - Experiment_exp_004_higher_lr_5e-5 - INFO - 创建数据加载器...
+2025-12-14 17:17:32 - Experiment_exp_004_higher_lr_5e-5 - INFO - 创建模型...
+2025-12-14 17:17:33 - Experiment_exp_004_higher_lr_5e-5 - INFO - 使用余弦学习率调度: warmup=1000, cycles=0.5
+2025-12-14 17:17:33 - Experiment_exp_004_higher_lr_5e-5 - INFO - 开始训练...
+2025-12-14 17:17:33 - Experiment_exp_004_higher_lr_5e-5 - INFO - 学习率: 5e-05
+2025-12-14 17:17:33 - Experiment_exp_004_higher_lr_5e-5 - INFO - 批次大小: 32
+2025-12-14 17:17:33 - Experiment_exp_004_higher_lr_5e-5 - INFO - 训练轮数: 1
+2025-12-14 21:37:27 - Experiment_exp_004_higher_lr_5e-5 - INFO - ============================================================
+2025-12-14 21:37:27 - Experiment_exp_004_higher_lr_5e-5 - INFO - 实验开始: higher_lr_5e-5
+2025-12-14 21:37:27 - Experiment_exp_004_higher_lr_5e-5 - INFO - 实验ID: exp_004_higher_lr_5e-5
+2025-12-14 21:37:27 - Experiment_exp_004_higher_lr_5e-5 - INFO - ============================================================
+2025-12-14 21:37:27 - Experiment_exp_004_higher_lr_5e-5 - INFO - 加载数据...
+2025-12-14 21:37:28 - Experiment_exp_004_higher_lr_5e-5 - INFO - 数据大小: 219,286
+2025-12-14 21:37:28 - Experiment_exp_004_higher_lr_5e-5 - INFO - 训练集: 175,428, 测试集: 43,858
+2025-12-14 21:37:28 - Experiment_exp_004_higher_lr_5e-5 - INFO - 创建数据加载器...

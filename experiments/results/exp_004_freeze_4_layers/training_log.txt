@@ -1,0 +1,8 @@
+2025-12-14 21:39:15 - Experiment_exp_004_freeze_4_layers - INFO - ============================================================
+2025-12-14 21:39:15 - Experiment_exp_004_freeze_4_layers - INFO - 实验开始: freeze_4_layers
+2025-12-14 21:39:15 - Experiment_exp_004_freeze_4_layers - INFO - 实验ID: exp_004_freeze_4_layers
+2025-12-14 21:39:15 - Experiment_exp_004_freeze_4_layers - INFO - ============================================================
+2025-12-14 21:39:15 - Experiment_exp_004_freeze_4_layers - INFO - 加载数据...
+2025-12-14 21:39:16 - Experiment_exp_004_freeze_4_layers - INFO - 数据大小: 219,286
+2025-12-14 21:39:16 - Experiment_exp_004_freeze_4_layers - INFO - 训练集: 175,428, 测试集: 43,858
+2025-12-14 21:39:16 - Experiment_exp_004_freeze_4_layers - INFO - 创建数据加载器...

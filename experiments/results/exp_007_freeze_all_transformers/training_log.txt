@@ -1,0 +1,41 @@
+2025-12-14 22:12:18 - Experiment_exp_007_freeze_all_transformers - INFO - ============================================================
+2025-12-14 22:12:18 - Experiment_exp_007_freeze_all_transformers - INFO - 实验开始: freeze_all_transformers
+2025-12-14 22:12:18 - Experiment_exp_007_freeze_all_transformers - INFO - 实验ID: exp_007_freeze_all_transformers
+2025-12-14 22:12:18 - Experiment_exp_007_freeze_all_transformers - INFO - ============================================================
+2025-12-14 22:12:18 - Experiment_exp_007_freeze_all_transformers - INFO - 加载数据...
+2025-12-14 22:12:19 - Experiment_exp_007_freeze_all_transformers - INFO - 数据大小: 219,286
+2025-12-14 22:12:19 - Experiment_exp_007_freeze_all_transformers - INFO - 训练集: 175,428, 测试集: 43,858
+2025-12-14 22:12:19 - Experiment_exp_007_freeze_all_transformers - INFO - 创建数据加载器...
+2025-12-14 22:12:21 - Experiment_exp_007_freeze_all_transformers - INFO - 创建模型...
+2025-12-14 22:12:21 - Experiment_exp_007_freeze_all_transformers - INFO - 冻结前 6 层...
+2025-12-14 22:12:21 - Experiment_exp_007_freeze_all_transformers - INFO - 总参数: 66,955,779
+2025-12-14 22:12:21 - Experiment_exp_007_freeze_all_transformers - INFO - 可训练参数: 592,899 (0.9%)
+2025-12-14 22:12:22 - Experiment_exp_007_freeze_all_transformers - INFO - 开始训练...
+2025-12-14 22:12:22 - Experiment_exp_007_freeze_all_transformers - INFO - 学习率: 0.0001
+2025-12-14 22:12:22 - Experiment_exp_007_freeze_all_transformers - INFO - 批次大小: 64
+2025-12-14 22:12:22 - Experiment_exp_007_freeze_all_transformers - INFO - 训练轮数: 1
+2025-12-14 22:15:57 - Experiment_exp_007_freeze_all_transformers - INFO - Epoch 1/1 - Loss: 0.8413, Acc: 0.6110
+2025-12-14 22:15:57 - Experiment_exp_007_freeze_all_transformers - INFO - 开始评估...
+2025-12-14 22:17:20 - Experiment_exp_007_freeze_all_transformers - INFO - 测试准确率: 0.6306
+2025-12-14 22:17:20 - Experiment_exp_007_freeze_all_transformers - INFO - F1 (macro): 0.5695
+2025-12-14 22:17:20 - Experiment_exp_007_freeze_all_transformers - INFO - F1 (weighted): 0.6145
+2025-12-14 22:17:20 - Experiment_exp_007_freeze_all_transformers - INFO - 保存实验结果...
+2025-12-14 22:17:20 - Experiment_exp_007_freeze_all_transformers - INFO - 
+              precision    recall  f1-score   support
+
+         bad     0.7371    0.7788    0.7574     21558
+     neutral     0.4223    0.2637    0.3246     11098
+        good     0.5613    0.7091    0.6266     11202
+
+    accuracy                         0.6306     43858
+   macro avg     0.5736    0.5838    0.5695     43858
+weighted avg     0.6125    0.6306    0.6145     43858
+
+2025-12-14 22:17:20 - Experiment_exp_007_freeze_all_transformers - INFO - 混淆矩阵已保存
+2025-12-14 22:17:20 - Experiment_exp_007_freeze_all_transformers - INFO - 实验记录已更新
+2025-12-14 22:17:20 - Experiment_exp_007_freeze_all_transformers - INFO - 
+============================================================
+2025-12-14 22:17:20 - Experiment_exp_007_freeze_all_transformers - INFO - 实验完成！耗时: 5.02 分钟
+2025-12-14 22:17:20 - Experiment_exp_007_freeze_all_transformers - INFO - 结果保存在: experiments/results/exp_007_freeze_all_transformers
+2025-12-14 22:17:20 - Experiment_exp_007_freeze_all_transformers - INFO - ============================================================
+

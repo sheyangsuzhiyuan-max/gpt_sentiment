@@ -1,0 +1,39 @@
+2025-12-14 21:53:15 - Experiment_exp_005_higher_lr_5e-5 - INFO - ============================================================
+2025-12-14 21:53:15 - Experiment_exp_005_higher_lr_5e-5 - INFO - 实验开始: higher_lr_5e-5
+2025-12-14 21:53:15 - Experiment_exp_005_higher_lr_5e-5 - INFO - 实验ID: exp_005_higher_lr_5e-5
+2025-12-14 21:53:15 - Experiment_exp_005_higher_lr_5e-5 - INFO - ============================================================
+2025-12-14 21:53:15 - Experiment_exp_005_higher_lr_5e-5 - INFO - 加载数据...
+2025-12-14 21:53:15 - Experiment_exp_005_higher_lr_5e-5 - INFO - 数据大小: 219,286
+2025-12-14 21:53:15 - Experiment_exp_005_higher_lr_5e-5 - INFO - 训练集: 175,428, 测试集: 43,858
+2025-12-14 21:53:15 - Experiment_exp_005_higher_lr_5e-5 - INFO - 创建数据加载器...
+2025-12-14 21:53:17 - Experiment_exp_005_higher_lr_5e-5 - INFO - 创建模型...
+2025-12-14 21:53:18 - Experiment_exp_005_higher_lr_5e-5 - INFO - 使用余弦学习率调度: warmup=1000, cycles=0.5
+2025-12-14 21:53:18 - Experiment_exp_005_higher_lr_5e-5 - INFO - 开始训练...
+2025-12-14 21:53:18 - Experiment_exp_005_higher_lr_5e-5 - INFO - 学习率: 5e-05
+2025-12-14 21:53:18 - Experiment_exp_005_higher_lr_5e-5 - INFO - 批次大小: 32
+2025-12-14 21:53:18 - Experiment_exp_005_higher_lr_5e-5 - INFO - 训练轮数: 1
+2025-12-14 22:01:38 - Experiment_exp_005_higher_lr_5e-5 - INFO - Epoch 1/1 - Loss: 0.3270, Acc: 0.8733
+2025-12-14 22:01:38 - Experiment_exp_005_higher_lr_5e-5 - INFO - 开始评估...
+2025-12-14 22:02:33 - Experiment_exp_005_higher_lr_5e-5 - INFO - 测试准确率: 0.9327
+2025-12-14 22:02:33 - Experiment_exp_005_higher_lr_5e-5 - INFO - F1 (macro): 0.9232
+2025-12-14 22:02:33 - Experiment_exp_005_higher_lr_5e-5 - INFO - F1 (weighted): 0.9326
+2025-12-14 22:02:33 - Experiment_exp_005_higher_lr_5e-5 - INFO - 保存实验结果...
+2025-12-14 22:02:33 - Experiment_exp_005_higher_lr_5e-5 - INFO - 
+              precision    recall  f1-score   support
+
+         bad     0.9656    0.9595    0.9625     21558
+     neutral     0.8855    0.8670    0.8762     11098
+        good     0.9162    0.9463    0.9310     11202
+
+    accuracy                         0.9327     43858
+   macro avg     0.9224    0.9243    0.9232     43858
+weighted avg     0.9327    0.9327    0.9326     43858
+
+2025-12-14 22:02:33 - Experiment_exp_005_higher_lr_5e-5 - INFO - 混淆矩阵已保存
+2025-12-14 22:02:33 - Experiment_exp_005_higher_lr_5e-5 - INFO - 实验记录已更新
+2025-12-14 22:02:33 - Experiment_exp_005_higher_lr_5e-5 - INFO - 
+============================================================
+2025-12-14 22:02:33 - Experiment_exp_005_higher_lr_5e-5 - INFO - 实验完成！耗时: 9.31 分钟
+2025-12-14 22:02:33 - Experiment_exp_005_higher_lr_5e-5 - INFO - 结果保存在: experiments/results/exp_005_higher_lr_5e-5
+2025-12-14 22:02:33 - Experiment_exp_005_higher_lr_5e-5 - INFO - ============================================================
+
